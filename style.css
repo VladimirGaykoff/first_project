@@ -164,3 +164,130 @@ a.catalog__jumption{
     line-height: 19px;
     color: #F26376;
 }
+
+.block__offers{
+    background: #222224;
+    
+}
+.offers{
+    display: flex;
+    justify-content: space-between;
+    padding: 104px 0;
+}
+
+.offers_up{
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    text-align: center;
+    
+}
+.offers_down{
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+    margin: 16px 0 0 0;
+    padding: 0 30px;
+}
+.offers__img{
+    display: flex;
+    justify-content: center;
+}
+.car{
+    margin: 0 0 28px 0;
+}
+.discount{
+    margin: 0 0 19px 0;
+}
+.crown{
+    margin: 0 0 25px 0;
+}
+
+.outro{
+    height: 448px;
+    background-image: url(./img/outro_back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.outro__block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.outro__left{
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.feedback{
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224
+}
+.outro__right{
+    width: 557px;
+}
+.outro__bold{
+    font-weight: 700;
+    font-size:24px;
+    line-height: 40px;
+    text-align: center;
+}
+.outro__usual{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center; 
+}
+.form-button{
+display: flex;
+justify-content: center;
+margin: 32px 0 0 0;
+}
+.vvod {
+   font-size: 14px;
+   padding: 16px 0 16px 22px;
+   width: 258px;
+   background: #E1E1E1;
+   border: none;
+   border-bottom-left-radius: 24px;
+   border-top-left-radius: 24px;
+   color: #222224;
+  }
+  .knopka{
+    font-size: 14px;
+    padding: 16px 20px 16px 21px;
+    background: #F16D7F;
+    border: none;
+    border-bottom-right-radius: 24px;
+    border-top-right-radius: 24px;
+    color: #FFFFFF;
+  }
+.footer{
+    background: #222224
+}
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__text{
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+    padding: 30px 0;
+}
+.footer__right{
+    display: flex;
+    align-items: center;
+}
+
+.footer__item:not(:last-child){
+    margin: 0 7px 0 0;
+}
