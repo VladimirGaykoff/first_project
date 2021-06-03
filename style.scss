@@ -1,0 +1,195 @@
+@import "blocks/_header.scss";
+@import "blocks/_outro.scss";
+@import "blocks/_footer.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: lato;
+}
+.container{
+    max-width: 1160px;
+    padding: 0 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* CATALOG */
+/*//////////*/
+.catalog-intro{
+    background: #F8F3F4;
+}
+.c-intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__left{
+        padding: 60px 0;
+        & h1{
+            color: #F16D7F;
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+}
+
+
+/* CART PAGE */ 
+/*//////////*/
+
+.cart-box{
+    padding: 96px 0 128px 0;
+    display: flex;
+    justify-content: space-between;
+    &__left{
+        
+        width: 652px;
+        // height: 306px;
+    }   
+    &__right{
+        width: 360px;
+        & h3{
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+            margin: 20px 0;
+        }
+        & form{
+            // width: 100%;
+            & input{
+                width: 100%;
+                padding: 16px 0 16px 17px;
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;
+                color: #B1B1B1;
+                border: 1px solid #A4A4A4;
+                margin: 0 0 21px 0;
+            }
+            & button {
+                padding: 12px 15px;
+                font-weight: 300;
+                font-size: 11px;
+                line-height: 13px;
+                color: #4A4A4A;
+                background: #FFFFFF;
+                border: 1px solid #A4A4A4;
+                margin: 3px 0 57px 0;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+        &__chekout{
+            background: #F5F3F3;
+            padding: 42px;
+            & h5{
+                font-size: 11px;
+                line-height: 13px;
+                color: #4A4A4A;
+                margin: 0 0 12px 0;
+                text-align: right;
+            } 
+            & h4 {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #222222;
+                margin: 0 0 21px 0;
+                text-align: right;
+                & span {
+                    color: #F16D7F; 
+                }
+            } 
+            & hr{
+                color: #E2E2E2;
+                margin: 0 0 33px 0;
+            } 
+            & a{
+                text-decoration: none;
+                padding:  16px 42px;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #FFFFFF;
+                background: #F16D7F;
+            }  
+        }
+    }
+}
+
+.cart-item{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    margin: 0 0 40px 0;
+    &_img{
+        max-height: 306px;
+        & img{
+            height: 100%;
+        }
+    }
+    &__description{
+        padding: 22px 0 0 31px;
+        & .close{
+            position: absolute;
+            top: 28px;
+            right: 22px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        & h2{
+            max-width: 262px;
+            font-size: 24px;
+            line-height: 29px;
+            color: #222222;
+            margin: 0 0 42px 0;
+        }
+        & p{
+            font-size: 22px;
+            line-height: 26px;
+            color: #575757;
+            margin: 0 0 6px 0;
+            & span {
+                color: #F16D7F
+            }
+        }
+        &__vvod{
+            display: flex;
+            & p{
+                font-size: 22px;
+                line-height: 26px;
+                color: #575757;
+                margin: 0 0 6px 0;
+            }
+            & input{
+                padding: 2px 0 2px 0x;
+                width: 44px;
+                margin: 0 0 0 24px;
+                font-size: 18px;
+                line-height: 22px;
+                text-align: center;
+                color: #656565;
+                border: 1px solid #EAEAEA;
+            }
+        }
+    }
+}
+.cart-knopki{
+    margin: 72px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    & a{
+        text-decoration: none;
+        padding:  16px 40px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        border: 1px solid #A4A4A4;
+    }
+}
