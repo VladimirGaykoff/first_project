@@ -345,6 +345,7 @@ footer {
 
 .cart-item_img {
   max-height: 306px;
+  max-width: 262px;
 }
 
 .cart-item_img img {
