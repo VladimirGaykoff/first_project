@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Lato&subset=cyrillic' rel='stylesheet' type='text/css'>
     <script src="https://kit.fontawesome.com/33cbcfb7b1.js" crossorigin="anonymous"></script>
-    <title>Shop</title>
+    <title>Catalog</title>
 </head>
 
 <body>
@@ -37,51 +37,87 @@
             </div>
         </div>
     </header>
-
     <main>
-
-        <section class="intro">
-            <div class="container intro__wrap">
-                <div class="intro__wrap__text">
-                    <h1>THE BRAND </h1>
-                    <p> OF LUXERIOUS <span>FASHION</span></p>
+        <section class="catalog-intro">
+            <div class="container c-intro">
+                <div class="c-intro__left">
+                    <h1>NEW ARRIVALS</h1>
                 </div>
-
+                <div class="c-intro__right">
+                    <ul>
+                        <li><a href="index.html">HOME/ </a></li>
+                        <li><a href="#">MEN/ </a></li>
+                        <li><a href="#"><span class="arrivals">ARRIVALS</span></a></li>
+                    </ul>
+                </div>
             </div>
         </section>
-        <section class="block">
-            <div class="container block-wrap">
-                <div class="block-wrap__item block__women">
-                    <h3 class="block__up">30% OFF</h3>
-                    <p class="block__down">FOR WOMEN</p>
+        <section class="menu">
+            <div class="container menu__line">
+                <details class="filter">
+                    <summary class="filter__text"> FILTER &#8194 <svg class="f-svg" width="15" height="10"
+                            viewBox="0 0 15 10" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
+                        </svg>
+                    </summary>
+                    <details class="filter__category">
+                        <summary class="filter__category__text">CATEGORY</summary>
+                        <ul class="list-f">
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Bags</a></li>
+                            <li><a href="#">Denim</a></li>
+                            <li><a href="#">Hoodies & Sweatshirts</a></li>
+                            <li><a href="#">Jackets & Coats</a></li>
+                            <li><a href="#">Polos</a></li>
+                            <li><a href="#">Shirts</a></li>
+                            <li><a href="#">Shoes</a></li>
+                            <li><a href="#">Sweaters & Knits</a></li>
+                            <li><a href="#">T-Shirts</a></li>
+                            <li><a href="#">Tanks</a></li>
+                        </ul>
+
+
+                    </details>
+                    <details class="filter__category">
+                        <summary class="filter__category__text">BRAND</summary>
+                    </details>
+                    <details class="filter__category">
+                        <summary class="filter__category__text">DESIGNER</summary>
+                    </details>
+                </details>
+
+                <div class="f-menu">
+                    <p>TRENDING NOW</p>
+                    <img src="./img/strelka_vniz.svg" alt="v">
                 </div>
-                <div class="block-wrap__item block__men">
-                    <h3 class="block__up">HOT DEAL</h3>
-                    <p class="block__down">FOR MEN</p>
+                <div class="f-menu">
+                    <div class="f-menu__size">
+                        <p>SIZE</p>
+                        <div class="f-menu__size__v">
+                            <img src="./img/strelka_vniz.svg" alt="v">
+                            <div class="filter-chekbox">
+                                <ul>
+                                    <li> <input type="checkbox" id="one" name="size"> XS</li>
+                                    <li> <input type="checkbox" id="one" name="size"> S</li>
+                                    <li> <input type="checkbox" id="one" name="size"> M</li>
+                                    <li> <input type="checkbox" id="one" name="size"> L</li>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="block-wrap__item block__kids">
-                    <h3 class="block__up">NEW ARRIVALS</h3>
-                    <p class="block__down">FOR KIDS</p>
-                </div>
-                <div class="block-wrap__item block__accesories">
-                    <h3 class="block__up">LUXIROUS & TRENDY</h3>
-                    <p class="block__down">ACCESORIES</p>
+                <div class="f-menu">
+                    <p>PRICE</p>
+                    <img src="./img/strelka_vniz.svg" alt="v">
                 </div>
             </div>
-
         </section>
         <section class="block__card">
-            <div class="container">
-                <div class="fetured__items">
-                    <h2>Fetured Items</h2>
-                    <p>Shop for items based on what we featured in this week</p>
-                </div>
-            </div>
             <div class="container">
                 <div class="block__catalog">
                     <article class="card-item">
                         <div class="card-item__img">
-                            <img src="./img/cat_item1.png" alt="item1">
+                            <img src="./img/cat_item1.png" alt="cart__men1">
                         </div>
                         <div class="card-item__text">
                             <a href="product.html" class="cart__choice">
@@ -94,7 +130,7 @@
                     </article>
                     <article class="card-item">
                         <div class="card-item__img">
-                            <img src="./img/cat_item2.png" alt="item2">
+                            <img src="./img/cat_men2.png" alt="cart__men2">
                         </div>
                         <div class="card-item__text">
                             <a href="product.html" class="cart__choice">
@@ -107,7 +143,7 @@
                     </article>
                     <article class="card-item">
                         <div class="card-item__img">
-                            <img src="./img/cat_item3.png" alt="item3">
+                            <img src="./img/cat_item3.png" alt="cart__men3">
                         </div>
                         <div class="card-item__text">
                             <a href="product.html" class="cart__choice">
@@ -120,7 +156,7 @@
                     </article>
                     <article class="card-item">
                         <div class="card-item__img">
-                            <img src="./img/cat_item4.png" alt="item4">
+                            <img src="./img/cat_item4.png" alt="cart__men4">
                         </div>
                         <div class="card-item__text">
                             <a href="product.html" class="cart__choice">
@@ -133,7 +169,7 @@
                     </article>
                     <article class="card-item">
                         <div class="card-item__img">
-                            <img src="./img/cat_item5.png" alt="item5">
+                            <img src="./img/cat_men5.png" alt="cart__men5">
                         </div>
                         <div class="card-item__text">
                             <a href="product.html" class="cart__choice">
@@ -146,7 +182,46 @@
                     </article>
                     <article class="card-item">
                         <div class="card-item__img">
-                            <img src="./img/cat_item6.png" alt="item6">
+                            <img src="./img/cat_men6.png" alt="cart__men6">
+                        </div>
+                        <div class="card-item__text">
+                            <a href="product.html" class="cart__choice">
+                                <h3>ELLERY X M'O CAPSULE</h3>
+                            </a>
+                            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                                Ellery teams up with Moda Operandi.</p>
+                            <p> <span>$52.00</span> </p>
+                        </div>
+                    </article>
+                    <article class="card-item">
+                        <div class="card-item__img">
+                            <img src="./img/cat_men7.png" alt="cart__men7">
+                        </div>
+                        <div class="card-item__text">
+                            <a href="product.html" class="cart__choice">
+                                <h3>ELLERY X M'O CAPSULE</h3>
+                            </a>
+                            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                                Ellery teams up with Moda Operandi.</p>
+                            <p> <span>$52.00</span> </p>
+                        </div>
+                    </article>
+                    <article class="card-item">
+                        <div class="card-item__img">
+                            <img src="./img/cat_men8.png" alt="cart__men8">
+                        </div>
+                        <div class="card-item__text">
+                            <a href="product.html" class="cart__choice">
+                                <h3>ELLERY X M'O CAPSULE</h3>
+                            </a>
+                            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                                Ellery teams up with Moda Operandi.</p>
+                            <p> <span>$52.00</span> </p>
+                        </div>
+                    </article>
+                    <article class="card-item">
+                        <div class="card-item__img">
+                            <img src="./img/cat_men9.png" alt="cart__men9">
                         </div>
                         <div class="card-item__text">
                             <a href="product.html" class="cart__choice">
@@ -159,10 +234,24 @@
                     </article>
                 </div>
             </div>
-            <div class="button">
-                <a class="catalog__jumption" href="catalog.html">Browse All Product</a>
+
+            <div class="number__choise">
+                <ul>
+                    <li><a href="#"><img src="./img/strelka_vlevo.svg" alt="-"></a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">.....</a></li>
+                    <li><a href="#">20</a></li>
+                    <li><a href="#"><img src="./img/strelka_vpravo.svg" alt="-"></a></li>
+                </ul>
             </div>
         </section>
+
         <section class="offers">
             <div class="container offers__block">
                 <div class="offers-item">

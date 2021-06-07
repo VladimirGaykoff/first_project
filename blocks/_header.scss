@@ -1,0 +1,22 @@
+header{
+    background-color: #222222;
+    padding: 18px 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    &__left{
+        display: flex;
+        align-items: center;
+        & a{
+            margin: 0 41px 0 0 ;
+        }
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+    } 
+}
+.header__item:not(:last-child){
+    margin: 0 33px 0 0;
+}
