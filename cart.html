@@ -40,7 +40,7 @@
     <main>
         <section class="catalog-intro">
             <div class="container c-intro">
-                <div class="c-intro__left">
+                <div class="c-intro__left cart-left">
                     <h1>SHOPPING CART</h1>
                 </div>
 
@@ -60,7 +60,7 @@
                             <p>Size: Xl</p>
                             <div class="cart-item__description__vvod">
                                 <p>Quantity:</p>
-                                <input type="text" required>
+                                <input type="number" min="1" max="10" required>
                             </div>
                             <div class="close">
                                 <img src="./img/close.svg" alt="close">
@@ -78,7 +78,7 @@
                             <p>Size: Xl</p>
                             <div class="cart-item__description__vvod">
                                 <p>Quantity:</p>
-                                <input type="text" required>
+                                <input type="number" min="1" max="10" required>
                             </div>
                             <div class="close">
                                 <img src="./img/close.svg" alt="close">
@@ -91,13 +91,15 @@
                     </div>
                 </div>
                 <div class="cart-box__right">
-                    <h3>SHIPPING ADRES</h3>
-                    <form action="getting-info">
-                        <input type="text" placeholder="Bangladesh">
-                        <input type="text" placeholder="State">
-                        <input type="text" placeholder="Postcode / Zip">
-                        <button type="submit">GET A QUOTE</button>
-                    </form>
+                    <div class="cart-box__right__form">
+                        <h3>SHIPPING ADRES</h3>
+                        <form action="getting-info">
+                            <input type="text" placeholder="Bangladesh">
+                            <input type="text" placeholder="State">
+                            <input type="text" placeholder="Postcode / Zip">
+                            <button type="submit">GET A QUOTE</button>
+                        </form>
+                    </div>
                     <div class="cart-box__right__chekout">
                         <h5>SUB TOTAL $900</h5>
                         <h4>GRAND TOTAL <span>$900</span></h4>
