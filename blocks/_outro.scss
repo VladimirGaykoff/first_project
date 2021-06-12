@@ -1,0 +1,110 @@
+.outro-block{
+    height: 448px;
+    background-image: url(./img/outro_back.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+.outro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    &__left{
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__img{
+            margin: 0 0 20px 0;
+        }
+        & p{
+           
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #222224
+        }
+    }
+    &__right{
+        width: 557px;
+        & h2{
+            font-weight: 700;
+            font-size:24px;
+            line-height: 40px;
+            text-align: center;
+        }
+        & h3{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center; 
+        }
+        & form{
+            display: flex;
+            justify-content: center;
+            margin: 32px 0 0 0;
+            & .vvod {
+                font-size: 14px;
+                padding: 16px 0 16px 22px;
+                width: 258px;
+                background: #E1E1E1;
+                border: none;
+                border-radius: 24px 0 0 24px;
+                color: #222224;
+            }
+            & .knopka{
+                cursor: pointer;
+                font-size: 14px;
+                padding: 16px 20px 16px 21px;
+                background: #F16D7F;
+                border: none;
+                border-radius: 0 24px 24px 0;
+                color: #FFFFFF;
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 768px){
+
+
+    .outro-block{
+        height: 614px;
+        padding: 51px 0 140px 0;
+    }
+    .outro{
+        flex-direction: column;
+        justify-content: space-between;
+        &__right{
+            & form{
+                margin: 27px 0 0 0;
+            }
+        }
+            
+    }
+
+
+}
+
+@media (max-width: 375px){
+    .outro-block{
+        height: 550px;
+        padding: 54px 0 110px 0;
+    } 
+    .outro{
+        &__left{ 
+            & p{
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+        &__right{
+            & form{
+                margin: 22px 0 0 0;
+            }
+        }
+    }
+}
