@@ -39,3 +39,37 @@ footer{
         }
     }
 }
+
+@media (max-width: 768px){
+    .footer{
+        &__left{
+            & h4 {
+               
+                padding: 30px 0 30px 16px;
+            }
+        }
+        &__right{
+            &__item{
+                &:last-child{
+                    margin: 0 16px 0 0;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 376px){
+    .footer{
+        flex-direction: column-reverse;
+        align-items: center;
+        &__left{
+            & h4 {
+                padding: 0 0 9px 0;
+            }
+        }
+        
+        &__right{
+            margin: 43px 0 40px 0;
+        }
+    }
+}

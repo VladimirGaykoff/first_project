@@ -2,7 +2,7 @@
     height: 448px;
     background-image: url(./img/outro_back.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
     background-size: cover;
 }
 .outro{
@@ -16,7 +16,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        &__img{
+            margin: 0 0 20px 0;
+        }
         & p{
+           
             font-size: 20px;
             line-height: 24px;
             text-align: center;
@@ -61,5 +65,46 @@
             }
         }
         
+    }
+}
+
+@media (max-width: 768px){
+
+
+    .outro-block{
+        height: 614px;
+        padding: 51px 0 140px 0;
+    }
+    .outro{
+        flex-direction: column;
+        justify-content: space-between;
+        &__right{
+            & form{
+                margin: 27px 0 0 0;
+            }
+        }
+            
+    }
+
+
+}
+
+@media (max-width: 375px){
+    .outro-block{
+        height: 550px;
+        padding: 54px 0 110px 0;
+    } 
+    .outro{
+        &__left{ 
+            & p{
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+        &__right{
+            & form{
+                margin: 22px 0 0 0;
+            }
+        }
     }
 }
