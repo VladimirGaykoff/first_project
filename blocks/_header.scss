@@ -38,8 +38,10 @@ header{
 .nav {
     width: 232px;
     background-color: #fff;
-    height: 764px;
+    // height: 764px;
+    height: calc(100vh - 78px);
     padding: 37px 34px;
+    overflow-y: auto;
 }
   
 .nav__wrap {
